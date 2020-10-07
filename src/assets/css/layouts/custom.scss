@@ -1,0 +1,155 @@
+li {
+  list-style-type: none;
+}
+
+.ivu-select-visible {
+  .ivu-icon-ios-arrow-down {
+    transform: rotate(180deg);
+    z-index: 0;
+  }
+  input {
+    border-color: $blue-color;
+    z-index: 1;
+  }
+}
+
+dt, dd > p, dd.normal p, dd .list p {
+  display: flex;
+  span {
+    flex: 1;
+  }
+}
+
+.ex_table {
+  dt {
+    line-height: 32px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    user-select: none;
+  }
+  dd {
+    position: absolute;
+    height: calc(100% - 32px);
+    overflow-y: auto;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    &.non-auth,
+    &.empty {
+      overflow-y: hidden;
+      > div {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        div {
+          &.first {
+            color: $value-color;
+            height: 18px;
+            line-height: 18px;
+            font-size: 14px;
+          }
+          &.second {
+            color: $color-gray;
+            line-height: 16px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    p {
+      padding-right: 11px;
+      padding-left: 16px;
+      line-height: 20px;
+      height: 20px;
+      &.new_order,
+      &.new_trade {
+        display: none;
+      }
+      &.order,
+      &.trade {
+        display: flex !important;
+      }
+    }
+  }
+  &.table_sorter {
+    dt {
+      span {
+        cursor: pointer;
+        user-select: none;
+        &.text-left span {
+          float: left !important;
+        }
+        &.text-right span:last-child {
+          float: right !important;
+        }
+        .sorter {
+          position: relative;
+          width: 16px;
+          height: 32px;
+          i {
+            position: absolute;
+            font-size: 18px;
+            left: 0;
+            &:first-child {
+              bottom: 10px;
+            }
+            &:last-child {
+              top: 10px;
+            }
+          }
+        }
+      }
+    }
+    p {
+      cursor: pointer;
+      transition: all 0.2s;
+      .name {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.ivu-layout-header .un-auth,
+.modal-exchange {
+  button {
+    border: 1px solid $blue-dark-color;
+    background: #1d3863;
+    min-width: 70px;
+    padding: 0 10px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    &.ivu-menu-item-active {
+      background: $selected-blue-color;
+      color: #fff;
+    }
+  }
+}
+
+.ivu-notice-notice-close,
+.ivu-modal-close,
+.ivu-modal-action {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  i {
+    color: $icon-color;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    position: relative;
+    top: 1px;
+    &:hover {
+      color: $blue-color;
+    }
+  }
+}

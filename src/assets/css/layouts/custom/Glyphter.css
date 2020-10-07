@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Ionicons;
+  src: url("../../fonts/ionicons.ttf?v=3.0.0") format("truetype"),
+       url("../../fonts/ionicons.woff?v=3.0.0") format("woff"),
+       url("../../fonts/ionicons.svg?v=3.0.0#Ionicons") format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Glyphter";
+  src: url("../../fonts/Glyphter.eot?77zyvs");
+  src: url("../../fonts/Glyphter.eot?77zyvs#iefix") format("embedded-opentype"),
+    url("../../fonts/Glyphter.ttf?77zyvs") format("truetype"),
+    url("../../fonts/Glyphter.woff?77zyvs") format("woff"),
+    url("../../fonts/Glyphter.svg?77zyvs#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="custom-icon"],
+[class*=" custom-icon"] {
+  font-family: "Glyphter" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.custom-icon-list:before {
+  content: "\e904";
+}
+.custom-icon-history:before {
+  content: "\e903";
+}
+.custom-icon-user:before {
+  content: "\e902";
+}
+.custom-icon-protect:before {
+  content: "\e900";
+}
+.custom-icon-card:before {
+  content: "\e901";
+}

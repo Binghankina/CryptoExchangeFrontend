@@ -1,0 +1,74 @@
+.ivu-notice {
+  width: 335px;
+  margin-right: 24px;
+  position: fixed;
+  z-index: 1010;
+}
+
+.ivu-notice-content-with-icon,
+.ivu-notice-with-desc.ivu-notice-with-icon .ivu-notice-title {
+  margin-left: 51px;
+}
+
+.ivu-notice-notice {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  background: $bg-head-color;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.ivu-notice-notice-close {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  i {
+    font-size: 25px;
+  }
+}
+
+.ivu-notice-content-with-render-notitle {
+  margin-left: 26px;
+}
+
+.ivu-notice-with-icon .ivu-notice-title {
+  margin-left: 26px;
+}
+
+.ivu-notice-icon {
+  position: absolute;
+  top: -2px;
+  font-size: 16px;
+}
+
+.ivu-notice-with-success {
+  background: linear-gradient(0deg, $up-color, $up-color);
+}
+
+.ivu-notice-with-info {
+  background: linear-gradient(0deg, $info-color, $info-color);
+}
+
+.ivu-notice-with-warning {
+  background: linear-gradient(0deg, $warning-color, $warning-color);
+}
+.ivu-notice-with-error {
+  background: linear-gradient(0deg, $down-color, $down-color);
+}
+
+.ivu-notice-custom-content {
+  position: relative;
+  padding: 10px 30px 10px 20px;
+  background-size: 5px;
+  background-repeat: no-repeat;
+  background-position: left 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

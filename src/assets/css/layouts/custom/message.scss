@@ -1,0 +1,85 @@
+.ivu-message {
+  font-size: 14px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  pointer-events: none;
+  color: #fff;
+}
+
+.ivu-message-notice {
+  padding: 8px;
+  text-align: center;
+  -webkit-transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  &:first-child {
+    margin-top: -8px;
+  }
+}
+
+.ivu-message-notice-close {
+  position: absolute;
+  right: 4px;
+  top: 10px;
+  color: #999;
+  outline: 0;
+  i.ivu-icon {
+    font-size: 22px;
+    color: #999;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    position: relative;
+    top: -3px;
+    &:hover {
+      color: #444;
+    }
+  }
+}
+
+.ivu-message-notice-content {
+  display: inline-block;
+  pointer-events: all;
+  padding: 8px 16px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  background: $bg-head-color;
+  position: relative;
+}
+
+.ivu-message-notice-content-text {
+  display: inline-block;
+}
+
+.ivu-message-notice-closable .ivu-message-notice-content-text {
+  padding-right: 32px;
+}
+
+.ivu-message-success .ivu-icon {
+  color: $up-color;
+}
+
+.ivu-message-error .ivu-icon {
+  color: $down-color;
+}
+
+.ivu-message-warning .ivu-icon {
+  color: $warning-color;
+}
+
+.ivu-message-info .ivu-icon,
+.ivu-message-loading .ivu-icon {
+  color: $info-color;
+}
+
+.ivu-message .ivu-icon {
+  margin-right: 4px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.ivu-message-custom-content span {
+  vertical-align: middle;
+}

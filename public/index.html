@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="ZSmart, exchange, cryptocurrency, build own cryptocurrency exchange, sàn giao dịch, the exchange, bitcoin, btc, eth, etc"
+    />
+    <meta name="description" content="cryptocurrency exchange" />
+    <meta name="author" content="GIH" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript" src="<%= BASE_URL %>charting_library/charting_library.min.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>datafeeds/polyfills.js"></script>
+    <script type="text/javascript" src="<%= BASE_URL %>datafeeds/bundle.js"></script>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>GIH</title>
+  </head>
+  <body>
+    <div class="page-loading">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.bootcss.com/vConsole/3.3.2/vconsole.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    if (document.location.search.indexOf('debug=true') !== -1) {
+      setTimeout(() => {
+        var vConsole = new VConsole();
+        vConsole.setOption('maxLogNumber', 5000);
+      }, 1000)
+    }
+  </script>
+</html>

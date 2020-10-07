@@ -1,0 +1,132 @@
+.ivu-layout-header {
+  background: #002D41;
+  height: 48px;
+  min-width: 1200px;
+  padding: 0 10px;
+  line-height: 48px;
+  border-bottom: 1px solid rgba(49, 58, 86, 0.5);
+  > ul {
+    background: transparent;
+    .layout-logo {
+      width: 30px;
+      height: 30px;
+      background-size: 100% 100%;
+      background-image: url('data:image/png;base64,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');
+      border-radius: 3px;
+      float: left;
+      position: relative;
+      top: 10px;
+      left: 20px;
+      cursor: pointer;
+    }
+    .layout-nav-left {
+      float: left;
+      margin-left: 50px;
+    }
+    .layout-nav-right {
+      float: right;
+    }
+    >div {
+      display: flex;
+      .ivu-menu-item-active {
+        border-bottom: 3px solid $selected-blue-color;
+      }
+    }
+    .ivu-menu-item,
+    .ivu-menu-submenu {
+      color: $header-text-color;
+    }
+    .ivu-menu-item-active,
+    .ivu-menu-item:hover,
+    .ivu-menu-submenu-active,
+    .ivu-menu-submenu:hover {
+      color: $selected-color;
+    }
+    .un-auth button {
+      border: 1px solid $blue-dark-color;
+      background: #1d3863;
+      min-width: 70px;
+      padding: 0 10px;
+      height: 28px;
+      line-height: 28px;
+      color: #fff;
+      margin: 0 10px;
+      border-radius: 2px;
+      font-size: 12px;
+      &.ivu-menu-item-active {
+        background: $selected-blue-color;
+        color: #fff;
+      }
+    }
+    .ivu-dropdown {
+      margin: 0 10px;
+      .ivu-dropdown-rel {
+        cursor: pointer;
+        >a {
+          color: $header-text-color;
+          &.m-avatar {
+            img {
+              transform: translateY(25%);
+            }
+          }
+          i {
+            font-size: 18px;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+      &:hover .ivu-dropdown-rel {
+        a {
+          color: #fff;
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .ivu-select-dropdown {
+        .ivu-dropdown-menu {
+          a.ivu-dropdown-item,
+          li {
+            display: block;
+            width: 100%;
+            color: $text-dropdown-color;
+            height: 35px;
+            line-height: 35px;
+            padding: 0 8px;
+            text-align: center;
+            border: 0;
+            &.lang-selector {
+              padding: 0;
+            }
+            &.information {
+              width: 86%;
+              height: 100%;
+              margin: 0 auto;
+              display: block;
+              background-color: transparent;
+              border-bottom: 1px solid #374262;
+              padding: 15px 0;
+              .email {
+                color: #f2f3f4;
+                padding-bottom: 4px;
+              }
+              .uid {
+                font-size: 12px;
+              }
+              > div {
+                line-height: 1;
+              }
+            }
+          }
+        }
+        .user-dropdown {
+          min-width: 200px;
+          .user-menu {
+            width: 100%;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

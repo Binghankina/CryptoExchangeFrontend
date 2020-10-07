@@ -1,0 +1,57 @@
+@keyframes new {
+  from {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes up {
+  from {
+    color: $up-color;
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  to {
+    background-color: transparent;
+    color: unset;
+  }
+}
+
+@keyframes down {
+  from {
+    color: $down-color;
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  to {
+    background-color: transparent;
+    color: unset;
+  }
+}
+
+@keyframes up-more {
+  from {
+    color: $up-color;
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  to {
+    background-color: transparent;
+    color: unset;
+  }
+}
+
+@keyframes down-more {
+  from {
+    color: $down-color;
+    background-color: rgba(255, 255, 255, 0.07);
+  }
+
+  to {
+    background-color: transparent;
+    color: unset;
+  }
+}

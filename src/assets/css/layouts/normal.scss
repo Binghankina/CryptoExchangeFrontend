@@ -1,0 +1,98 @@
+.text-up {
+  color: $up-color;
+}
+
+.text-down {
+  color: $down-color;
+}
+
+.form-row {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  .form-label {
+    color: $footer-text-color;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+
+button {
+  &.bg-sell {
+    background-color: $down-color;
+    &:hover {
+      background-color: #f03e3e;
+    }
+  }
+  &.bg-buy {
+    background-color: $up-color;
+    &:hover {
+      background-color: #0ca678;
+    }
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+dd {
+  position: relative;
+}
+
+.modal-exchange {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(12, 15, 29, 0.9);
+  > div {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.transparent {
+    background: transparent;
+  }
+}
+
+html {
+  background: #171a25;
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: $bg-downdown-border-color;
+    -webkit-border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:horizontal {
+    width: 2px;
+    background-color: $bg-downdown-border-color;
+    border-radius: 6px;
+  }
+}
+
+.user-table {
+  dt {
+    display: flex;
+    span {
+      flex: 1;
+    }
+  }
+  dd > p {
+    display: flex;
+    span {
+      flex: 1;
+    }
+  }
+}

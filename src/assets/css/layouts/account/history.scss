@@ -1,0 +1,19 @@
+.history {
+  .setting-body {
+    th {
+      font-weight: normal;
+      color: $color-gray;
+      padding: 8px 0;
+      border-bottom: 1px solid $border-color;
+    }
+    .history-row {
+      td {
+        padding: 8px 0;
+      }
+    }
+    .table-content {
+      position: relative;
+      padding-bottom: 12px;
+    }
+  }
+}
